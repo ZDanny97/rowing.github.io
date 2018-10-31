@@ -1,0 +1,63 @@
+.column {
+    float: left;
+    width: 25%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.middle{ 
+	margin: 0 auto; 
+	width: 180px; 
+}
+
+.container{
+	width:45%;
+    padding:1em;
+    margin:0 auto;
+}
+
+#lightblue{
+    background: blue;
+}
+
+#red{
+    background: red;
+}
+
+#green{
+    background: green;
+}
+
+ul {
+    display: inline-block;
+    *display: inline;
+    zoom: 1
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div{
+    margin:0;
+}
+
+body {
+    margin: 0;    
+} 

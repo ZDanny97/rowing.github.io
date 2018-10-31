@@ -1,0 +1,117 @@
+<HTML LANG="es">
+
+<HEAD>
+  <div style="background: darkgray;">
+   <LINK REL="stylesheet" TYPE="text/css" HREF="style.css">
+   <img src="Images/rowers.png" width="10%" height="15%" class="center">
+   <img src="Images/profile.png" width="10%" height="15%" class="right">
+  <hr>
+  </div>
+</HEAD>
+<BODY>
+  <div id="dayslist" style="background: lightgray;">
+    <select>
+      <option value="1">Today</option>
+    </select>
+    <hr>
+  </div>
+  <div id="topbuttons" style="background: darkgray;">
+    <div class="row">
+      <div class="column">
+        <img src="Images/weather.png" width="25%" height="15%" class="center">
+      </div>
+      <div class="column">
+        <img src="Images/wind.jpg" width="25%" height="15%" class="center">
+      </div>
+      <div class="column">
+        <img src="Images/camera.jpg" width="25%" height="15%" class="center">
+      </div>
+      <div class="column">
+        <img src="Images/tides.jpg" width="25%" height="15%" class="center">
+      </div>
+    </div>
+    <hr> 
+  </div>
+  <div id="lineup-workout" style="background: lightgray;">
+    <div class="middle">
+    <button type="button" id="lineup-button" style="border: none; color: blue; background: lightgray; text-decoration: underline;" onclick="lineup()">Lineups</button>
+    <button type="button" id="workout-button" style="border: none; color: black; background: lightgray; text-decoration: underline;" onclick="workout()">Workout</button>
+    </div>
+    <div class="container">
+      <div id="lineup-container" style="background: lightgray;">
+        <ul style="list-style: none;">
+          <li>Boat: Relentless</li>
+          <li>Oars: Green</li>
+          <li>B <input type="text" name="fname" id="lightblue"></li>
+          <li>O <input type="text" name="fname" id="red"></li>
+          <li>C <input type="text" name="fname" id="green"></li>
+          <li>8 <input type="text" name="fname" id="red"></li>
+          <li>7 <input type="text" name="fname" id="green"></li>
+          <li>6 <input type="text" name="fname" id="red"></li>
+          <li>5 <input type="text" name="fname" id="green"></li>
+          <li>4 <input type="text" name="fname" id="red"></li>
+          <li>3 <input type="text" name="fname" id="green"></li>
+          <li>2 <input type="text" name="fname" id="red"></li>
+          <li>1 <input type="text" name="fname" id="green"></li>
+        </ul>
+        <ul style="list-style: none;">
+          <li>Boat: Alcala</li>
+          <li>Oars: Red</li>
+          <li>B <input type="text" name="fname" id="lightblue"></li>
+          <li>O <input type="text" name="fname" id="red"></li>
+          <li>C <input type="text" name="fname" id="green"></li>
+          <li>8 <input type="text" name="fname" id="red"></li>
+          <li>7 <input type="text" name="fname" id="green"></li>
+          <li>6 <input type="text" name="fname" id="red"></li>
+          <li>5 <input type="text" name="fname" id="green"></li>
+          <li>4 <input type="text" name="fname" id="red"></li>
+          <li>3 <input type="text" name="fname" id="green"></li>
+          <li>2 <input type="text" name="fname" id="red"></li>
+          <li>1 <input type="text" name="fname" id="green"></li>
+        </ul>
+      </div>
+      <div id="workout-container" style="display:none; background: lightgray;">
+        <ul style="list-style: none; border:gray;">
+          <li>To East Bay</li>
+          <li>Warm-up:</li>
+          <li> 6s 4`(I`/I`/I`) reverse pick</li>
+          <li>Workout:</li>
+          <li>4x10` @20,22,24,22</li>
+        </ul>
+      </div>
+    </div>  
+  <hr>    
+  </div>
+  <div id="bottombuttons" style="background: darkgray;">
+    <div class="row">
+      <div class="column">
+        <img src="Images/home.png" width="20%" height="15%" class="center">
+      </div>
+      <div class="column">
+        <img src="Images/people.png" width="20%" height="15%" class="center">
+      </div>
+      <div class="column">
+        <img src="Images/timer.png" width="20%" height="15%" class="center">
+      </div>
+      <div class="column">
+        <img src="Images/calendar.png" width="20%" height="15%" class="center">
+      </div>
+    </div>
+    <hr> 
+  </div>  
+</BODY>
+<script>
+function lineup() {
+    document.getElementById("lineup-button").style.color= "blue";
+    document.getElementById("lineup-container").style.display="unset";
+    document.getElementById("workout-button").style.color= "black";
+    document.getElementById("workout-container").style.display="none";
+}
+function workout() {
+    document.getElementById("workout-button").style.color= "blue";
+    document.getElementById("workout-container").style.display="unset";
+    document.getElementById("lineup-button").style.color= "black";
+    document.getElementById("lineup-container").style.display="none";
+}
+</script>
+</HTML>
